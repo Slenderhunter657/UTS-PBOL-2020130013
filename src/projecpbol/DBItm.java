@@ -19,6 +19,10 @@ public class DBItm {
     public ModelItm getModelItm() {
         return dt;
     }
+
+    public void setDt(ModelItm dt) {
+        this.dt = dt;
+    }
     
     public ObservableList<ModelItm> Load(){
         try{

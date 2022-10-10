@@ -19,6 +19,11 @@ public class DBPetBase {
     public ModelPetBase getModelPetBase() {
         return dt;
     }
+
+    public void setDt(ModelPetBase dt) {
+        this.dt = dt;
+    }
+    
     
     public ObservableList<ModelPetBase> Load(){
         try{

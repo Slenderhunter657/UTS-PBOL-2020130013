@@ -31,6 +31,13 @@ import javafx.stage.Stage;
  */
 public class MainController implements Initializable {
     
+    public static DBInv dtinv = new DBInv();
+    public static DBItm dtitm = new DBItm();
+    public static DBPetBase dtpetbase = new DBPetBase();
+    public static DBPetHistory dtpethist = new DBPetHistory();
+    public static DBPetInst dtpetinst = new DBPetInst();
+    public static DBPlayer dtplayer = new DBPlayer();
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         

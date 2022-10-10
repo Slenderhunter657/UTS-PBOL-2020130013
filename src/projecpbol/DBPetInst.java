@@ -19,6 +19,10 @@ public class DBPetInst {
     public ModelPetInst getModelPetInst() {
         return dt;
     }
+
+    public void setDt(ModelPetInst dt) {
+        this.dt = dt;
+    }
     
     public ObservableList<ModelPetInst> Load(){
         try{

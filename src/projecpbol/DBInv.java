@@ -19,6 +19,10 @@ public class DBInv {
     public ModelInv getModelInv() {
         return dt;
     }
+
+    public void setDt(ModelInv dt) {
+        this.dt = dt;
+    }
     
     public ObservableList<ModelInv> Load(){
         try{

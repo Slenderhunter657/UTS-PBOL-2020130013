@@ -19,6 +19,10 @@ public class DBPlayer {
     public ModelPlayer getModelPlayer() {
         return dt;
     }
+
+    public void setDt(ModelPlayer dt) {
+        this.dt = dt;
+    }
     
     public ObservableList<ModelPlayer> Load(){
         try{

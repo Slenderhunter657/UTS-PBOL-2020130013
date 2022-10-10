@@ -19,6 +19,10 @@ public class DBPetHistory {
     public ModelPetHistory getModelPetHistory() {
         return dt;
     }
+
+    public void setDt(ModelPetHistory dt) {
+        this.dt = dt;
+    }
     
     public ObservableList<ModelPetHistory> Load(){
         try{

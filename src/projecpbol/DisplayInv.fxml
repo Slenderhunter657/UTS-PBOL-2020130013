@@ -24,8 +24,8 @@
       <Button fx:id="btnsebelum" layoutX="229.0" layoutY="299.0" mnemonicParsing="false" onAction="#sebelumKlik" text="Sebelum" />
       <Button fx:id="btnsesudah" layoutX="329.0" layoutY="299.0" mnemonicParsing="false" onAction="#sesudahKlik" prefHeight="25.0" prefWidth="63.0" text="Sesudah" />
       <Button fx:id="btnakhir" layoutX="429.0" layoutY="299.0" mnemonicParsing="false" onAction="#akhirKlik" prefHeight="25.0" prefWidth="63.0" text="Akhir" />
-      <Button fx:id="btntambah" layoutX="179.0" layoutY="335.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="63.0" text="Tambah" />
-      <Button fx:id="btnubah" layoutX="279.0" layoutY="335.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="63.0" text="Edit" />
-      <Button fx:id="btnhapus" layoutX="379.0" layoutY="335.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="63.0" text="Hapus" />
+      <Button fx:id="btntambah" layoutX="179.0" layoutY="335.0" mnemonicParsing="false" onAction="#tambahKlik" prefHeight="25.0" prefWidth="63.0" text="Tambah" />
+      <Button fx:id="btnubah" layoutX="279.0" layoutY="335.0" mnemonicParsing="false" onAction="#ubahKlik" prefHeight="25.0" prefWidth="63.0" text="Edit" />
+      <Button fx:id="btnhapus" layoutX="379.0" layoutY="335.0" mnemonicParsing="false" onAction="#hapusKlik" prefHeight="25.0" prefWidth="63.0" text="Hapus" />
    </children>
 </AnchorPane>
