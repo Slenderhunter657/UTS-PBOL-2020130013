@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projecpbol.MainController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Master">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#dispInv" text="Inventory" />
+                  <MenuItem mnemonicParsing="false" onAction="#dispItm" text="Item" />
+                  <MenuItem mnemonicParsing="false" onAction="#dispPetBase" text="Pet Base" />
+                  <MenuItem mnemonicParsing="false" onAction="#dispIPetHist" text="Pet History" />
+                  <MenuItem mnemonicParsing="false" onAction="#dispPetInst" text="Pet Instance" />
+                  <MenuItem mnemonicParsing="false" onAction="#dispPlayer" text="Player" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Exit">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#keluarClick" text="Exit" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
