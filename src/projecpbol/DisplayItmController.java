@@ -59,15 +59,15 @@ public class DisplayItmController implements Initializable {
             tbview.getItems().clear();
             
             TableColumn col = new TableColumn("Item Id");
-            col.setCellValueFactory(new PropertyValueFactory<ModelItm, String>("item_id"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelItm, String>("id"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Item Name");
-            col.setCellValueFactory(new PropertyValueFactory<ModelItm, String>("item_name"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelItm, String>("name"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Item Type");
-            col.setCellValueFactory(new PropertyValueFactory<ModelItm, Integer>("item_type"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelItm, Integer>("type"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Rarity");
@@ -75,11 +75,11 @@ public class DisplayItmController implements Initializable {
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Hunger Added");
-            col.setCellValueFactory(new PropertyValueFactory<ModelItm, Float>("add_hunger"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelItm, Float>("hunger"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Happiness Added");
-            col.setCellValueFactory(new PropertyValueFactory<ModelItm, Float>("add_happy"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelItm, Float>("happy"));
             tbview.getColumns().addAll(col);
 
             tbview.setItems(data);

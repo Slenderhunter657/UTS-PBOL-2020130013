@@ -59,47 +59,47 @@ public class DisplayPetInstController implements Initializable {
             tbview.getItems().clear();
             
             TableColumn col = col = new TableColumn("Pet Id");
-            col.setCellValueFactory(new PropertyValueFactory<ModelPetInst, String>("pet_id"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelPetInst, String>("id"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Player Id");
-            col.setCellValueFactory(new PropertyValueFactory<ModelPetInst, String>("player_id"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelPetInst, String>("playerId"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Pet Base Id");
-            col.setCellValueFactory(new PropertyValueFactory<ModelPetInst, String>("pet_base_id"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelPetInst, String>("baseId"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Pet Name");
-            col.setCellValueFactory(new PropertyValueFactory<ModelPetInst, String>("pet_name"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelPetInst, String>("name"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Current Pet Health");
-            col.setCellValueFactory(new PropertyValueFactory<ModelPetInst, Float>("cur_health"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelPetInst, Float>("health"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Current Pet Hunger");
-            col.setCellValueFactory(new PropertyValueFactory<ModelPetInst, Float>("cur_hunger"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelPetInst, Float>("hunger"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Current Pet Happiness");
-            col.setCellValueFactory(new PropertyValueFactory<ModelPetInst, Float>("cur_happy"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelPetInst, Float>("happy"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Current Pet Training");
-            col.setCellValueFactory(new PropertyValueFactory<ModelPetInst, Float>("cur_train"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelPetInst, Float>("train"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Current Pet Age");
-            col.setCellValueFactory(new PropertyValueFactory<ModelPetInst, Float>("cur_age"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelPetInst, Float>("age"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Current Pet Experience Point");
-            col.setCellValueFactory(new PropertyValueFactory<ModelPetInst, Float>("cur_exp"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelPetInst, Float>("exp"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Current Pet Level");
-            col.setCellValueFactory(new PropertyValueFactory<ModelPetInst, Integer>("cur_level"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelPetInst, Integer>("level"));
             tbview.getColumns().addAll(col);
 
             tbview.setItems(data);

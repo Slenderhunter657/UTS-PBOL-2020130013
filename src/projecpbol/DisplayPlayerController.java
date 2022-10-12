@@ -59,15 +59,15 @@ public class DisplayPlayerController implements Initializable {
             tbview.getItems().clear();
             
             TableColumn col = col = new TableColumn("Player Id");
-            col.setCellValueFactory(new PropertyValueFactory<ModelInv, String>("player_id"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelInv, String>("id"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Player Name");
-            col.setCellValueFactory(new PropertyValueFactory<ModelInv, String>("player_name"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelInv, String>("name"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Reset Count");
-            col.setCellValueFactory(new PropertyValueFactory<ModelInv, Integer>("reset_count"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelInv, Integer>("reset"));
             tbview.getColumns().addAll(col);
 
             tbview.setItems(data);

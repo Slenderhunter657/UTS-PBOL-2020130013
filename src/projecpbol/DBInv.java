@@ -30,7 +30,7 @@ public class DBInv {
             koneksi con = new koneksi();
             con.bukaKoneksi();
             con.statement = con.dbKoneksi.createStatement();
-            ResultSet rs = con.statement.executeQuery("Select * from inventory");
+            ResultSet rs = con.statement.executeQuery("Select player_id,item_id,item_count from inventory");
             int i = 1;
             while(rs.next()){
                 ModelInv d = new ModelInv();

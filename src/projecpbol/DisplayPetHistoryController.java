@@ -53,21 +53,21 @@ public class DisplayPetHistoryController implements Initializable {
     }    
     
     private void showData() {
-        ObservableList data = data = DisplayPetHistoryController.dtpetHistory.Load();
+        ObservableList data = MainController.dtpethist.Load();
         if (data != null) {
             tbview.getColumns().clear();
             tbview.getItems().clear();
             
-            TableColumn col = col = new TableColumn("Player Id");
-            col.setCellValueFactory(new PropertyValueFactory<ModelPetHistory, String>("player_id"));
+            TableColumn col = new TableColumn("Player Id");
+            col.setCellValueFactory(new PropertyValueFactory<ModelPetHistory, String>("playerId"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Pet Id");
-            col.setCellValueFactory(new PropertyValueFactory<ModelPetHistory, String>("pet_id"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelPetHistory, String>("petId"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Pet Name");
-            col.setCellValueFactory(new PropertyValueFactory<ModelPetHistory, String>("pet_name"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelPetHistory, String>("petName"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Pet Age");

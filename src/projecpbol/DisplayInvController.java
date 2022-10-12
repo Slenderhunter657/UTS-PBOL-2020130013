@@ -62,7 +62,7 @@ public class DisplayInvController implements Initializable {
             tbview.getItems().clear();
             
             TableColumn col = new TableColumn("Player Id");
-            col.setCellValueFactory(new PropertyValueFactory<ModelInv, String>("player_id"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelInv, String>("playerId"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Item Id");

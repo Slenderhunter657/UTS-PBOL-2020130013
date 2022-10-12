@@ -35,11 +35,11 @@ public class DBPetHistory {
             while(rs.next()){
                 ModelPetHistory d = new ModelPetHistory();
                 d.setPlayerId(rs.getString("player_id"));
-                d.setPlayerId(rs.getString("pet_id"));
-                d.setPlayerId(rs.getString("pet_name"));
-                d.setPlayerId(rs.getString("age"));
-                d.setPlayerId(rs.getString("training"));
-                d.setPlayerId(rs.getString("level"));
+                d.setPetId(rs.getString("pet_id"));
+                d.setPetName(rs.getString("pet_name"));
+                d.setAge(rs.getFloat("age"));
+                d.setTraining(rs.getFloat("training"));
+                d.setLevel(rs.getInt("level"));
                 TableData.add(d);
                 i++;
             }

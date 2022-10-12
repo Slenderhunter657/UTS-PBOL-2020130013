@@ -59,19 +59,19 @@ public class DisplayPetBaseController implements Initializable {
             tbview.getItems().clear();
             
             TableColumn col = col = new TableColumn("Pet Base Id");
-            col.setCellValueFactory(new PropertyValueFactory<ModelPetBase, String>("pet_base_id"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelPetBase, String>("id"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Pet Type");
-            col.setCellValueFactory(new PropertyValueFactory<ModelPetBase, Integer>("pet_type"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelPetBase, Integer>("type"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Max Hunger");
-            col.setCellValueFactory(new PropertyValueFactory<ModelPetBase, Float>("max_hunger"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelPetBase, Float>("maxHunger"));
             tbview.getColumns().addAll(col);
 
             col = new TableColumn("Max Happiness");
-            col.setCellValueFactory(new PropertyValueFactory<ModelPetBase, Float>("max_happy"));
+            col.setCellValueFactory(new PropertyValueFactory<ModelPetBase, Float>("maxHappy"));
             tbview.getColumns().addAll(col);
 
             tbview.setItems(data);
