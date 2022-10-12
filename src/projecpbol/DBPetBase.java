@@ -72,7 +72,7 @@ public class DBPetBase {
         koneksi con = new koneksi();
         try {
             con.bukaKoneksi();
-            con.preparedStatement = con.dbKoneksi.prepareStatement("insert into pet_base_id (pet_base_id, pet_type, max_hunger, max_happy) values (?,?,?,?)");
+            con.preparedStatement = con.dbKoneksi.prepareStatement("insert into pet_base (pet_base_id, pet_type, max_hunger, max_happy) values (?,?,?,?)");
             con.preparedStatement.setString(1, this.getModelPetBase().getId());
             con.preparedStatement.setInt(2, this.getModelPetBase().getType());
             con.preparedStatement.setFloat(3, this.getModelPetBase().getMaxHunger());

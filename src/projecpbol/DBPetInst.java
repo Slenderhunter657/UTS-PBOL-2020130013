@@ -78,7 +78,7 @@ public class DBPetInst {
         koneksi con = new koneksi();
         try {
             con.bukaKoneksi();
-            con.preparedStatement = con.dbKoneksi.prepareStatement("insert into player (pet_id, player_id, pet_base_id, pet_name, cur_health, cur_hunger, cur_happy, cur_train, cur_age, cur_exp, cur_level) values (?,?,?,?,?,?,?,?,?,?,?)");
+            con.preparedStatement = con.dbKoneksi.prepareStatement("insert into pet_instance (pet_id, player_id, pet_base_id, pet_name, cur_health, cur_hunger, cur_happy, cur_train, cur_age, cur_exp, cur_level) values (?,?,?,?,?,?,?,?,?,?,?)");
             con.preparedStatement.setString(1, this.getModelPetInst().getId());
             con.preparedStatement.setString(2, this.getModelPetInst().getPlayerId());
             con.preparedStatement.setString(3, this.getModelPetInst().getBaseId());

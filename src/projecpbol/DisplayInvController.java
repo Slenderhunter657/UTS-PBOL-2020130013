@@ -148,7 +148,7 @@ public class DisplayInvController implements Initializable {
         ModelInv s = new ModelInv();
         s = tbview.getSelectionModel().getSelectedItem();
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("FXMLInputNilai.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("InputInv.fxml"));
             Parent root = (Parent) loader.load();
             InputInvController isidt = (InputInvController) loader.getController();
             isidt.execute(s);

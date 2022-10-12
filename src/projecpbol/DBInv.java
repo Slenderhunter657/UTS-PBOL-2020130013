@@ -109,7 +109,7 @@ public class DBInv {
         koneksi con = new koneksi();
         try {
             con.bukaKoneksi();
-            con.preparedStatement = con.dbKoneksi.prepareStatement("update player set item_count = ? where player_id = ? and item_id = ? ;");
+            con.preparedStatement = con.dbKoneksi.prepareStatement("update inventory set item_count = ? where player_id = ? and item_id = ? ;");
             con.preparedStatement.setString(1, String.valueOf(this.getModelInv().getItem_count()));
             con.preparedStatement.setString(2, this.getModelInv().getPlayerId());
             con.preparedStatement.setString(3, this.getModelInv().getItem_id());

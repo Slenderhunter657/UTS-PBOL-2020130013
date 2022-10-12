@@ -73,7 +73,7 @@ public class DBPetHistory {
         koneksi con = new koneksi();
         try {
             con.bukaKoneksi();
-            con.preparedStatement = con.dbKoneksi.prepareStatement("insert into player (player_id, pet_id, pet_name, age, training, level) values (?,?,?,?,?,?)");
+            con.preparedStatement = con.dbKoneksi.prepareStatement("insert into pet_history (player_id, pet_id, pet_name, age, training, level) values (?,?,?,?,?,?)");
             con.preparedStatement.setString(1, this.getModelPetHistory().getPlayerId());
             con.preparedStatement.setString(2, this.getModelPetHistory().getPetId());
             con.preparedStatement.setString(3, this.getModelPetHistory().getPetName());
