@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="projecpbol.DisplayItmController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projecpbol.DisplayItmController">
     <children>
       <TableView fx:id="tbview" layoutX="70.0" layoutY="65.0" prefHeight="218.0" prefWidth="463.0">
         <columns>
@@ -24,6 +24,7 @@
       <Button fx:id="btnsebelum" layoutX="229.0" layoutY="299.0" mnemonicParsing="false" onAction="#sebelumKlik" text="Sebelum" />
       <Button fx:id="btnsesudah" layoutX="329.0" layoutY="299.0" mnemonicParsing="false" onAction="#sesudahKlik" prefHeight="25.0" prefWidth="63.0" text="Sesudah" />
       <Button fx:id="btnakhir" layoutX="429.0" layoutY="299.0" mnemonicParsing="false" onAction="#akhirKlik" prefHeight="25.0" prefWidth="63.0" text="Akhir" />
-      <Button fx:id="btnhapus" layoutX="379.0" layoutY="335.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="63.0" text="Hapus" />
+      <Button fx:id="btnhapus" layoutX="329.0" layoutY="337.0" mnemonicParsing="false" onAction="#hapusKlik" prefHeight="25.0" prefWidth="63.0" text="Hapus" />
+      <Button fx:id="btnkeluar" layoutX="429.0" layoutY="337.0" mnemonicParsing="false" onAction="#keluarKlik" prefHeight="25.0" prefWidth="63.0" text="Exit" />
    </children>
 </AnchorPane>

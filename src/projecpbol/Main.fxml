@@ -5,12 +5,11 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projecpbol.MainController">
    <children>
       <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
         <menus>
-          <Menu mnemonicParsing="false" text="Master">
+          <Menu mnemonicParsing="false" text="Display">
             <items>
               <MenuItem mnemonicParsing="false" onAction="#dispInv" text="Inventory" />
                   <MenuItem mnemonicParsing="false" onAction="#dispItm" text="Item" />
@@ -20,6 +19,14 @@
                   <MenuItem mnemonicParsing="false" onAction="#dispPlayer" text="Player" />
             </items>
           </Menu>
+            <Menu mnemonicParsing="false" text="Input">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#inpInv" text="Inventory" />
+                  <MenuItem mnemonicParsing="false" onAction="#inpPetHist" text="Pet History" />
+                  <MenuItem mnemonicParsing="false" onAction="#inpPetInst" text="Pet Instance" />
+                  <MenuItem mnemonicParsing="false" onAction="#inpPlayer" text="Player" />
+               </items>
+            </Menu>
           <Menu mnemonicParsing="false" text="Exit">
             <items>
               <MenuItem mnemonicParsing="false" onAction="#keluarClick" text="Exit" />

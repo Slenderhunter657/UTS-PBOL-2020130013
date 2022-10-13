@@ -33,7 +33,7 @@ public class DisplayItmController implements Initializable {
     public static DBItm dtitm = new DBItm();
     
     @FXML
-    private TableView tbview;
+    private TableView<ModelItm> tbview;
     @FXML
     private Button btnawal;
     @FXML
@@ -48,6 +48,8 @@ public class DisplayItmController implements Initializable {
     private Button btnubah;
     @FXML
     private Button btnhapus;
+    @FXML
+    private Button btnkeluar;
 
     /**
      * Initializes the controller class.
@@ -142,24 +144,29 @@ public class DisplayItmController implements Initializable {
 
     
     //modifing...
-//    @FXML
-//    private void hapusKlik(ActionEvent event) {
-//        ModelItm s = new ModelItm();
-//        s = tbview.getSelectionModel().getSelectedItem();
-//        Alert a = new Alert(Alert.AlertType.CONFIRMATION, "Mau dihapus?", ButtonType.YES, ButtonType.NO);
-//        a.showAndWait();
-//        if (a.getResult() == ButtonType.YES) {
-//            if (MainController.dtitm.delete(s.getId())) {
-//                Alert b = new Alert(Alert.AlertType.INFORMATION, "Data berhasil dihapus", ButtonType.OK);
-//                b.showAndWait();
-//            } else {
-//                Alert b = new Alert(Alert.AlertType.ERROR, "Data gagal dihapus", ButtonType.OK);
-//                b.showAndWait();
-//            }
-//            showData();
-//            awalKlik(event);
-//        }
-//    }
+    @FXML
+    private void hapusKlik(ActionEvent event) {
+        ModelItm s = new ModelItm();
+        s = tbview.getSelectionModel().getSelectedItem();
+        Alert a = new Alert(Alert.AlertType.CONFIRMATION, "Mau dihapus?", ButtonType.YES, ButtonType.NO);
+        a.showAndWait();
+        if (a.getResult() == ButtonType.YES) {
+            if (MainController.dtitm.delete(s.getId())) {
+                Alert b = new Alert(Alert.AlertType.INFORMATION, "Data berhasil dihapus", ButtonType.OK);
+                b.showAndWait();
+            } else {
+                Alert b = new Alert(Alert.AlertType.ERROR, "Data gagal dihapus", ButtonType.OK);
+                b.showAndWait();
+            }
+            showData();
+            awalKlik(event);
+        }
+    }
+    
+    @FXML
+    private void keluarKlik(ActionEvent event) {
+        btnkeluar.getScene().getWindow().hide();
+    }
 //
 //    @FXML
 //    private void ubahKlik(ActionEvent event) {

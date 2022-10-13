@@ -27,7 +27,7 @@ public class DisplayPetBaseController implements Initializable {
     public static DBPetBase dtpetBase = new DBPetBase();
     
     @FXML
-    private TableView tbview;
+    private TableView<ModelPetBase> tbview;
     @FXML
     private Button btnawal;
     @FXML
@@ -42,6 +42,8 @@ public class DisplayPetBaseController implements Initializable {
     private Button btnubah;
     @FXML
     private Button btnhapus;
+    @FXML
+    private Button btnkeluar;
 
     /**
      * Initializes the controller class.
@@ -105,5 +107,29 @@ public class DisplayPetBaseController implements Initializable {
     private void akhirKlik(ActionEvent event) {
         tbview.getSelectionModel().selectLast();
         tbview.requestFocus();
+    }
+    
+    @FXML
+    private void hapusKlik(ActionEvent event) {
+        ModelPetBase s = new ModelPetBase();
+        s = tbview.getSelectionModel().getSelectedItem();
+        Alert a = new Alert(Alert.AlertType.CONFIRMATION, "Mau dihapus?", ButtonType.YES, ButtonType.NO);
+        a.showAndWait();
+        if (a.getResult() == ButtonType.YES) {
+            if (MainController.dtpetbase.delete(s.getId())) {
+                Alert b = new Alert(Alert.AlertType.INFORMATION, "Data berhasil dihapus", ButtonType.OK);
+                b.showAndWait();
+            } else {
+                Alert b = new Alert(Alert.AlertType.ERROR, "Data gagal dihapus", ButtonType.OK);
+                b.showAndWait();
+            }
+            showData();
+            awalKlik(event);
+        }
+    }
+    
+    @FXML
+    private void keluarKlik(ActionEvent event) {
+        btnkeluar.getScene().getWindow().hide();
     }
 }

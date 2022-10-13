@@ -146,6 +146,74 @@ public class MainController implements Initializable {
     }
     
     @FXML
+    private void inpInv(ActionEvent event) {
+        try{
+            FXMLLoader loader=new FXMLLoader(getClass().getResource("InputInv.fxml"));    
+            Parent root = (Parent)loader.load();
+            Scene scene = new Scene(root);
+            Stage stg=new Stage();
+            stg.initModality(Modality.APPLICATION_MODAL);
+            stg.setResizable(false);
+            stg.setIconified(false);
+            stg.setScene(scene);
+            stg.show();        
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+    }
+    
+    @FXML
+    private void inpPetHist(ActionEvent event) {
+        try{
+            FXMLLoader loader=new FXMLLoader(getClass().getResource("InputPetHist.fxml"));    
+            Parent root = (Parent)loader.load();
+            Scene scene = new Scene(root);
+            Stage stg=new Stage();
+            stg.initModality(Modality.APPLICATION_MODAL);
+            stg.setResizable(false);
+            stg.setIconified(false);
+            stg.setScene(scene);
+            stg.show();        
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+    }
+    
+    @FXML
+    private void inpPetInst(ActionEvent event) {
+        try{
+            FXMLLoader loader=new FXMLLoader(getClass().getResource("InputPetInst.fxml"));    
+            Parent root = (Parent)loader.load();
+            Scene scene = new Scene(root);
+            Stage stg=new Stage();
+            stg.initModality(Modality.APPLICATION_MODAL);
+            stg.setResizable(false);
+            stg.setIconified(false);
+            stg.setScene(scene);
+            stg.show();        
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+    }
+    
+    @FXML
+    private void inpPlayer(ActionEvent event) {
+        try{
+            FXMLLoader loader=new FXMLLoader(getClass().getResource("InputPlayer.fxml"));    
+            Parent root = (Parent)loader.load();
+            Scene scene = new Scene(root);
+            Stage stg=new Stage();
+            stg.initModality(Modality.APPLICATION_MODAL);
+            stg.setResizable(false);
+            stg.setIconified(false);
+            stg.setScene(scene);
+            stg.show();        
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+    }
+    
+    @FXML
     private void keluarClick(ActionEvent event) {
         System.exit(0);
     }

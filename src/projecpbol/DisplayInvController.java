@@ -46,6 +46,8 @@ public class DisplayInvController implements Initializable {
     private Button btnubah;
     @FXML
     private Button btnhapus;
+    @FXML
+    private Button btnkeluar;
 
     /**
      * Initializes the controller class.
@@ -164,5 +166,10 @@ public class DisplayInvController implements Initializable {
         }
         showData();
         awalKlik(event);
+    }
+    
+    @FXML
+    private void keluarKlik(ActionEvent event) {
+        btnkeluar.getScene().getWindow().hide();
     }
 }
